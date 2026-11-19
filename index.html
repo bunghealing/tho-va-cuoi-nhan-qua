@@ -14,14 +14,14 @@
   *{box-sizing:border-box}
   html,body{height:100%}
   body{margin:0;background:#F8FBF6;color:var(--ink);font-family:"Be Vietnam Pro",sans-serif}
-  .shell{height:100%;min-height:600px;max-width:1180px;margin:auto;padding:18px 24px;display:flex;flex-direction:column;gap:14px}
+  .shell{height:100%;min-height:600px;max-width:1180px;margin:auto;padding:18px 24px;display:flex;flex-direction:column;justify-content:center;gap:14px}
   .nav{display:flex;justify-content:space-between;align-items:center;gap:12px}
   .brand{display:flex;align-items:center;gap:10px;font-weight:700;letter-spacing:.06em;color:var(--green);font-size:14px}
   .mark{width:32px;height:32px;border:1px solid #C9DECD;border-radius:50%;display:grid;place-items:center;color:var(--leaf);font:600 16px "Playfair Display",serif}
   .logo{height:44px;width:auto;display:block}
   .nav-note{font-size:11px;color:var(--muted);letter-spacing:.12em;text-transform:uppercase}
 
-  .hero{flex:1;position:relative;border-radius:28px;overflow:hidden;background:radial-gradient(circle at 74% 34%,#4FAE73 0,#0E7A3D 34%,#023F1D 82%);color:#fff;box-shadow:0 24px 70px rgba(2,63,29,.16);display:grid;grid-template-columns:minmax(0,1fr) minmax(0,.9fr)}
+  .hero{flex:1 1 auto;max-height:680px;position:relative;border-radius:28px;overflow:hidden;background:radial-gradient(circle at 74% 34%,#4FAE73 0,#0E7A3D 34%,#023F1D 82%);color:#fff;box-shadow:0 24px 70px rgba(2,63,29,.16);display:grid;grid-template-columns:minmax(0,1fr) minmax(0,.9fr)}
   .hero::before,.hero::after{content:"";position:absolute;border:1px solid rgba(255,255,255,.14);border-radius:50%;width:460px;height:460px;right:9%;top:12%;pointer-events:none}
   .hero::after{width:540px;height:540px;right:5%;top:5%;border-color:rgba(255,255,255,.07)}
   .copy{position:relative;z-index:2;padding:clamp(26px,5vh,54px) 0 clamp(22px,4vh,40px) 7%;display:flex;flex-direction:column;justify-content:center}
@@ -70,7 +70,7 @@
     .nav{justify-content:center;padding-top:2px}
     .nav-note{display:none}
     .logo{height:34px}
-    .hero{display:flex;flex-direction:column;border-radius:24px;background:radial-gradient(circle at 50% 26%,#4FAE73 0,#0E7A3D 36%,#023F1D 86%)}
+    .hero{max-height:860px;display:flex;flex-direction:column;border-radius:24px;background:radial-gradient(circle at 50% 26%,#4FAE73 0,#0E7A3D 36%,#023F1D 86%)}
     .hero::before{width:290px;height:290px;left:50%;right:auto;top:3%;transform:translateX(-50%)}
     .hero::after{width:350px;height:350px;left:50%;right:auto;top:-3%;transform:translateX(-50%)}
     .pic{order:-1;flex:1 1 auto;min-height:170px;margin-bottom:-28px}
