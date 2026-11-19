@@ -139,6 +139,19 @@
 </div>
 
 <script>
+/* Phóng to cả trang trên màn hình lớn (thiết kế gốc 1280x760) */
+(function(){
+  var shell=document.querySelector('.shell');
+  function fit(){
+    var w=innerWidth,h=innerHeight,z=1;
+    if(w>900){z=Math.max(1,Math.min(w/1280,h/760));}
+    document.body.style.zoom=z>1.01?z:'';
+    shell.style.height=z>1.01?(h/z)+'px':'';
+  }
+  fit(); addEventListener('resize',fit);
+})();
+</script>
+<script>
 /* ====== CÀI ĐẶT ====== */
 var CONFIG = {
   // Link gửi form: https://docs.google.com/forms/d/e/<ID>/formResponse
